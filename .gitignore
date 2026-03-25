@@ -68,3 +68,6 @@ htmlcov/
 tmp/
 temp/
 *.tmp
+
+*.pyc
+kmnist_data
