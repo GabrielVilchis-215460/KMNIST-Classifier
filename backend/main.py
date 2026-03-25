@@ -8,6 +8,11 @@ import tensorflow as tf
 
 app = FastAPI()
 
+origins = [
+    "https://kmnist-classifier.vercel.app/",
+    "http://localhost:5173",
+]
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
