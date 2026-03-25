@@ -21,21 +21,30 @@ export default function Instructions() {
             <span className="step-num">01</span>
             <div>
               <strong>Consigue una imagen</strong>
-              <p>Descarga una imagen de prueba del dataset KMNIST (ver abajo) o dibuja un carácter a mano y escanéalo.</p>
+              <p>
+                Descarga una imagen correspondiente a algunas de las letras o
+                clases que reconoce el modelo (ver abajo) y escanéalo.
+              </p>
             </div>
           </li>
           <li className="step">
             <span className="step-num">02</span>
             <div>
               <strong>Sube la imagen</strong>
-              <p>Ve a la pestaña <em>Clasificar</em> y arrastra tu imagen o haz clic para seleccionarla. Acepta PNG y JPG.</p>
+              <p>
+                Ve a la pestaña <em>Clasificar</em> y arrastra tu imagen o haz
+                clic para seleccionarla. Acepta PNG y JPG.
+              </p>
             </div>
           </li>
           <li className="step">
             <span className="step-num">03</span>
             <div>
               <strong>Interpreta los resultados</strong>
-              <p>Verás la predicción principal, el porcentaje de confianza, el Top 3 de candidatos y la probabilidad de cada clase.</p>
+              <p>
+                Verás la predicción principal, el porcentaje de confianza, el
+                Top 3 de candidatos y la probabilidad de cada clase.
+              </p>
             </div>
           </li>
         </ol>
@@ -44,19 +53,27 @@ export default function Instructions() {
       <section className="instr-section">
         <h2 className="instr-title">¿Qué imágenes usar para probar?</h2>
         <p className="instr-text">
-          El modelo fue entrenado con el dataset <strong>KMNIST</strong>, que contiene caracteres
-          del alfabeto japonés <em>Hiragana</em> escritos a mano en fondo negro (28×28 px).
-          Para mejores resultados:
+          El modelo fue entrenado con el dataset <strong>KMNIST</strong>, que
+          contiene caracteres del alfabeto japonés <em>Hiragana</em> escritos a
+          mano en fondo negro (28×28 px). Para mejores resultados:
         </p>
         <ul className="tips">
-          <li>✔ Usa imágenes en <strong>escala de grises</strong> o blanco y negro</li>
-          <li>✔ El carácter debe estar <strong>centrado</strong> en la imagen</li>
-          <li>✔ Fondo claro, trazo oscuro (el modelo invierte automáticamente)</li>
+          <li>
+            ✔ Usa imágenes en <strong>escala de grises</strong> o blanco y negro
+          </li>
+          <li>
+            ✔ El carácter debe estar <strong>centrado</strong> en la imagen
+          </li>
+          <li>
+            ✔ Fondo claro, trazo oscuro (el modelo invierte automáticamente)
+          </li>
           <li>✘ Evita imágenes con ruido, colores o múltiples caracteres</li>
         </ul>
 
         <div className="download-box">
-          <p className="download-title">Descarga imágenes de prueba oficiales:</p>
+          <p className="download-title">
+            Descarga imágenes de prueba oficiales:
+          </p>
           <a
             href="https://www.kaggle.com/datasets/anokas/kuzushiji"
             target="_blank"
@@ -66,7 +83,8 @@ export default function Instructions() {
             Kaggle · Dataset KMNIST
           </a>
           <p className="download-hint">
-            Descarga el archivo, extrae cualquier imagen de <code>kmnist-test-imgs.npz</code> y úsala directamente.
+            Descarga el archivo, extrae cualquier imagen de{" "}
+            <code>kmnist-test-imgs.npz</code> y úsala directamente.
           </p>
         </div>
       </section>
@@ -88,19 +106,31 @@ export default function Instructions() {
         <div className="metrics-grid">
           <div className="metric-card">
             <h4>Confianza</h4>
-            <p>Probabilidad máxima asignada a la clase ganadora. Un valor mayor al 80% indica una predicción segura.</p>
+            <p>
+              Probabilidad máxima asignada a la clase ganadora. Un valor mayor
+              al 80% indica una predicción segura.
+            </p>
           </div>
           <div className="metric-card">
             <h4>Top 3</h4>
-            <p>Las tres clases con mayor probabilidad. Útil cuando el carácter es ambiguo o similar a otros.</p>
+            <p>
+              Las tres clases con mayor probabilidad. Útil cuando el carácter es
+              ambiguo o similar a otros.
+            </p>
           </div>
           <div className="metric-card">
             <h4>Tiempo de inferencia</h4>
-            <p>Milisegundos que tardó el modelo en procesar tu imagen. Valores típicos: 5–50 ms.</p>
+            <p>
+              Milisegundos que tardó el modelo en procesar tu imagen. Valores
+              típicos: 5–50 ms.
+            </p>
           </div>
           <div className="metric-card">
             <h4>Distribución de probabilidad</h4>
-            <p>Muestra cómo distribuye el modelo la certeza entre las 10 clases posibles.</p>
+            <p>
+              Muestra cómo distribuye el modelo la certeza entre las 10 clases
+              posibles.
+            </p>
           </div>
         </div>
       </section>
