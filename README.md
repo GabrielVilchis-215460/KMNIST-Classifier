@@ -74,7 +74,7 @@ Haz clic en **Clasificar otra imagen** para reiniciar y subir una nueva.
   <a href="https://kmnist-classifier.vercel.app" target="_blank">
     <img src="https://img.shields.io/badge/Demo-Live-brightgreen?style=for-the-badge&logo=vercel"/>
   </a>
-  <a href="https://tu-api.railway.app/docs" target="_blank">
+  <a href="https://kmnist-classifier.onrender.com/docs" target="_blank">
     <img src="https://img.shields.io/badge/API-Docs-blue?style=for-the-badge&logo=fastapi"/>
   </a>
 </p>
