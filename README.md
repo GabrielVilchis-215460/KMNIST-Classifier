@@ -1,4 +1,4 @@
-# KMNIST Classifier 🈶 - Gabriel Alberto Vilchis Ríos - 215460
+# 🈶 KMNIST Classifier  - Gabriel Alberto Vilchis Ríos - 215460
 
 Aplicación web para clasificar caracteres del alfabeto japonés **Hiragana** escritos a mano,
 utilizando una red neuronal entrenada con el dataset **KMNIST**.
